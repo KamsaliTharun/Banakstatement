@@ -1,0 +1,82 @@
+{% extends 'demo.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+{% block content %}
+
+
+    <title>Received Request</title>
+
+
+    <style>
+        table {
+          border-collapse: collapse;
+          border-collapse: separate;
+          border-spacing: 7px;
+        }
+        
+        td, th {
+          padding: 10px;
+         
+        }
+        </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <h2 style="color: blue;">Recived Requests</h2>
+          <a href="">back</a>
+      </nav>
+
+      <h4>< Logged in User Name ></h4>
+
+      <p>List of money requests you have received.</p>
+
+
+
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>Requested by</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>09-nov</td>
+          <td>1000</td>
+          <td>UserName 1</td>
+          <td>Accepted</td>
+          <td>N.A</td>
+          
+        </tr>
+        <tr>
+            <td>08-nov</td>
+            <td>2000</td>
+            <td>UserName 2</td>
+            <td>Denied</td>
+            <td>N.A</td>
+          </tr>
+
+          <tr>
+            <td>09-nov</td>
+            <td>1000</td>
+            <td>UserName 1</td>
+            <td>Accepted</td>
+            <td><input type="submit" value="Accept" class="btn btn-primary">   <button type="button" class="btn btn-danger">Deny</button></td>
+            
+          </tr>
+      </table>
+
+      <a href="">Logout</a>
+    </form>
+    
+{% endblock %}
+
+</body>
+</html>

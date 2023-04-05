@@ -1,0 +1,39 @@
+{% extends 'demo.html' %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+       
+{% block content %}
+        <title>Request Money</title>    
+            
+
+  </head>
+  <body>
+        
+    <nav class="navbar navbar-light bg-light">
+        <h2 style="color: blue;">Request Money</h2>
+
+          <a href="">back</a>
+      </nav>
+
+      <h4>< Logged in User Name ></h4>
+
+    <p>Select a user and specify amount <br> you want to request from them.</p>
+
+    <form action="login.php" method="POST">
+      
+      <input type="text" id="username" name="username" placeholder="Select User"><br>
+  
+    
+      <input type="password" id="password" name="password" placeholder="Amount"><br><br>
+  
+      <input type="submit" value="Request Money" class="btn btn-primary"><br> <br>
+     
+      <a href="">Logout</a>
+
+      </form>
+
+        {% endblock %}
+  </body>
+</html>

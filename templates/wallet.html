@@ -1,0 +1,71 @@
+{% extends 'demo.html' %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+  
+
+    {% block content %}
+    <title>Wallet</title>
+
+
+    <style>
+      table {
+        border-collapse: collapse;
+        border-collapse: separate;
+        border-spacing: 10px;
+      }
+      
+      td, th {
+        padding: 10px;
+       
+      }
+      </style>
+  </head>
+  <body>
+     <form>
+    <nav class="navbar navbar-light bg-light">
+        <h2 style="color: blue;">Wallet</h2>
+
+          <a href="">back</a>
+      </nav>
+
+      <h4>< Logged in User Name ></h4>
+
+   <h3 style="display:inline-block; "> Balance :</h3>
+            <h2 style="display:inline-block;color: green;">2,470</h2>
+      
+         
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Cr/Dr</th>
+                <th>Balance</th>
+                <th>Remarks</th>
+              </tr>
+              <tr>
+                <td>09-nov</td>
+                <td>30</td>
+                <td>Debit</td>
+                <td>2,470</td>
+                <td>Charges for receiving 1,000 from UserName 1</td>
+                
+              </tr>
+              <tr>
+                <td>09-nov</td>
+                <td>1,000</td>
+                <td>Credit</td>
+                <td>2,500</td>
+                <td>Received from UserName 1</td>
+              </tr>
+            </table>
+  
+            <a href="">Logout</a>
+          </form>
+
+            
+    {% endblock %}
+
+  </body>
+</html>

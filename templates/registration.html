@@ -1,0 +1,22 @@
+{% extends 'demo.html' %}
+
+{% block title %}
+  <title>Home page</title>
+{% endblock %}
+
+{% block body_block %}
+
+<h1>registration page</h1>
+<form method="POST">
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+    <input type="submit" value="Register">
+
+
+
+</form>
+
+  {% endblock %}
+

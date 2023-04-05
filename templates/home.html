@@ -1,0 +1,32 @@
+{% extends 'demo.html' %}
+
+{% block title %}
+  <title>Home page</title>
+{% endblock %}
+
+{% block body_block %}
+  {% if username %}
+
+<h1 style="color: blue;">Welcome to Home page mr/ms {{username}}</h1>
+<h6> <ul style="list-style-type: none; padding: 0;">
+
+  <li><a href="">Wallet</a></li>
+
+  <li><a href="{% url 'send_money' %}">Send Money</a></li>
+
+  <li><a href="">Request Money</a></li>
+
+  <li><a href="">Requests Received</a></li>
+
+  </ul></h6>
+
+{% else %}
+<h2 style="color: blue;">Welcome To Home Page</h2>
+
+  
+{% endif %}
+
+
+ 
+
+  {% endblock %}

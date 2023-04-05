@@ -1,0 +1,22 @@
+{% extends 'demo.html' %}
+{% block title %}
+  <title>send_money page</title>
+{% endblock %}
+
+{% block body_block %}
+
+    <p>Select a user and specify amount <br>to send</p>
+
+    <form method="POST">
+      {% csrf_token %}
+      <label for="reuser">Reciever</label>
+      <input type="text" id="reuser" name="reuser" placeholder="Select User"><br>
+  <label for="amount">Amount</label>
+  <input type="number" name="amount" id="amount"> <br>
+      <input type="submit" value="Send Money" class="btn btn-primary"><br> <br>
+     
+
+      </form>
+
+  {% endblock %}
+  
